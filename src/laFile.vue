@@ -27,9 +27,9 @@ export default {
   },
   mounted() {
     this.$store.dispatch("getGuichet");
-    this.$store.dispatch("getPosts1");/*
-    this.$store.dispatch("getPosts2");
-    this.$store.dispatch("getPosts3");*/
+    //this.$store.dispatch("getPosts1");
+    //this.$store.dispatch("getPosts2");
+    //this.$store.dispatch("getPosts3");
   }
 }
 </script>

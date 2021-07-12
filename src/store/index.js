@@ -32,13 +32,13 @@ const actions = {
                // let res = response.data.length
                 //commit(`SET_GUICHET`, response.data)
                 //console.log(response)
-                for(let i=1;i<=response.data.length;i++)
+                for(let i=0;i<response.data.length;i++)
                 {
-                        axios.get(`http://localhost:8000/guichets/${i}`)
-                        .then(response => {
-                            
-                            commit(`SET_POSTS${i}`, response.data)
-                    })
+                     /*   axios.get(`http://localhost:5001/guichets/${i}`)
+                        .then(response => {*/
+                            //console.log(response.data[i])
+                            commit(`SET_POSTS${i+1}`, response.data[i])
+                   // })
                 }
         })
          }, 1000);
